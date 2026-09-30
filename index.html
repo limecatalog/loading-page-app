@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#06080d">
+<meta name="description" content="Vortex Cloud Phone — premium cloud Android landing page.">
+<title>Vortex Cloud Phone</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+<style>
+:root{color-scheme:dark;background:#06080d}*{box-sizing:border-box}html{background:#06080d;scroll-behavior:smooth;overflow-x:hidden;overscroll-behavior-x:none}body{margin:0;min-width:320px;overflow-x:hidden;background:#06080d;color:#f5f7fa;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}body:before{content:"";position:fixed;inset:0;z-index:-3;background:radial-gradient(circle at 10% 5%,rgba(90,120,255,.09),transparent 28%),radial-gradient(circle at 90% 20%,rgba(255,255,255,.045),transparent 25%),linear-gradient(180deg,#06080d,#090b10 55%,#06080d);pointer-events:none}body:after{content:"";position:fixed;inset:0;z-index:-2;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:40px 40px;mask-image:linear-gradient(to bottom,black,transparent 75%);pointer-events:none}button,a{touch-action:manipulation;-webkit-tap-highlight-color:transparent}a{text-decoration:none;color:inherit}button{font:inherit}::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:#06080d}::-webkit-scrollbar-thumb{background:rgba(255,255,255,.14);border-radius:99px;border:2px solid #06080d}.glass{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.105);box-shadow:0 22px 70px rgba(0,0,0,.32),inset 0 1px rgba(255,255,255,.035);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}.glass:hover{border-color:rgba(255,255,255,.17);background:rgba(255,255,255,.07)}.nav{background:rgba(8,10,15,.78);border:1px solid rgba(255,255,255,.11);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}.icon-box{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);flex:none}.verified-badge{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex:0 0 22px;margin-left:9px;border-radius:50%;background:#3b82f6;box-shadow:0 0 0 2px rgba(59,130,246,.10),0 0 14px rgba(59,130,246,.24);vertical-align:middle}.verified-badge svg{display:block;width:14px;height:14px}.login-brand-title{display:flex;align-items:center;justify-content:center;gap:0;white-space:nowrap}.verified-badge svg{display:block;width:14px;height:14px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:46px;padding:.75rem 1rem;border-radius:14px;font-weight:700;transition:.2s ease;white-space:nowrap}.btn-primary{background:#fff;color:#07090d}.btn-primary:hover{transform:translateY(-1px);background:#ededed}.btn-ghost{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.11)}.btn-ghost:hover{background:rgba(255,255,255,.09)}.hero-title{font-size:clamp(2.5rem,7vw,5.7rem);line-height:.98;letter-spacing:-.055em}.section-title{font-size:clamp(2rem,4vw,3.4rem);line-height:1.04;letter-spacing:-.04em}.card{border-radius:22px}.status-dot{width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 0 rgba(74,222,128,.4);animation:pulse 1.8s infinite}@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(74,222,128,0)}}.terminal{font-family:"JetBrains Mono",monospace}.fade-in{animation:fade .35s ease both}@keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}.safe-bottom{padding-bottom:max(2rem,env(safe-area-inset-bottom))}@media(max-width:767px){.glass{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}.card{border-radius:18px}.hero-title{letter-spacing:-.045em}.btn{width:100%}}
+
+.audio-gate{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,rgba(59,130,246,.12),transparent 34%),rgba(3,5,9,.96);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);transition:opacity .45s ease,visibility .45s ease}.audio-gate.hidden-gate{opacity:0;visibility:hidden;pointer-events:none}.audio-gate-card{width:min(92vw,520px);padding:2rem;text-align:center}.audio-gate-logo{width:84px;height:84px;margin:0 auto 1.2rem;border-radius:22px;background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.12);padding:10px;box-shadow:0 0 40px rgba(59,130,246,.12)}.music-control{position:fixed;right:1rem;bottom:1rem;z-index:120;width:46px;height:46px;border-radius:14px;background:rgba(8,10,15,.8);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:grid;place-items:center;color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.35)}.music-control:hover{background:rgba(255,255,255,.1)}@media(max-width:767px){.audio-gate-card{padding:1.4rem}.music-control{right:.75rem;bottom:.75rem}}
+
+.login-gate{position:fixed;inset:0;z-index:250;display:grid;place-items:center;padding:18px;background:
+radial-gradient(circle at 50% 15%,rgba(59,130,246,.16),transparent 32%),
+radial-gradient(circle at 10% 90%,rgba(255,255,255,.05),transparent 30%),
+rgba(2,4,8,.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);transition:opacity .45s ease,visibility .45s ease}
+.login-gate.hidden-gate{opacity:0;visibility:hidden;pointer-events:none}
+.login-shell{width:min(94vw,560px);max-height:calc(100dvh - 36px);overflow:auto;padding:12px;border-radius:28px;background:rgba(12,15,22,.66);
+border:1px solid rgba(255,255,255,.14);box-shadow:0 30px 100px rgba(0,0,0,.58),0 0 80px rgba(59,130,246,.08),inset 0 1px rgba(255,255,255,.06);
+backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px)}
+.login-video{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:20px;border:1px solid rgba(255,255,255,.12);background:#020305;box-shadow:inset 0 0 0 1px rgba(255,255,255,.025)}
+.login-video video{width:100%;height:100%;display:block;object-fit:cover}
+.login-video:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.04),transparent 48%,rgba(0,0,0,.28))}
+.login-content{padding:24px 18px 16px}.login-kicker{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.36);font-weight:700}.login-title{display:flex;align-items:center;justify-content:center;gap:2px;flex-wrap:wrap;font-size:clamp(1.55rem,5vw,2rem);line-height:1.15;font-weight:850;letter-spacing:-.035em}.login-description{max-width:430px;margin:10px auto 0;color:rgba(255,255,255,.58);font-size:13px;line-height:1.7}.login-help{margin-top:12px;color:rgba(255,255,255,.30);font-size:11px;line-height:1.55}.login-footer-note{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:14px;color:rgba(255,255,255,.27);font-size:10px}.login-footer-note i{color:rgba(96,165,250,.72)}
+.login-logo{width:62px;height:62px;border-radius:18px;padding:8px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.12);box-shadow:0 0 35px rgba(59,130,246,.12)}
+.google-btn{width:100%;min-height:50px;border-radius:15px;display:flex;align-items:center;justify-content:center;gap:12px;background:rgba(255,255,255,.96);color:#111827;font-weight:800;border:1px solid rgba(255,255,255,.7);transition:.2s ease}
+.google-btn:hover{transform:translateY(-1px);background:#fff;box-shadow:0 12px 35px rgba(0,0,0,.25)}
+.google-icon{width:20px;height:20px;flex:none}
+.login-status{min-height:18px;margin-top:10px;font-size:11px;text-align:center;color:rgba(255,255,255,.38)}
+.user-chip{display:none;align-items:center;gap:8px;padding:5px 9px 5px 5px;border-radius:999px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1)}
+.user-chip img{width:28px;height:28px;border-radius:50%;object-fit:cover;background:#111}
+@media(max-width:767px){.login-gate{padding:10px}.login-shell{border-radius:22px;padding:8px}.login-content{padding:20px 10px 10px}.login-video{border-radius:16px}.login-logo{width:58px;height:58px;border-radius:16px}.login-description{font-size:12.5px}.verified-badge{width:20px;height:20px;margin-left:6px}.verified-badge svg{width:13px;height:13px}.login-brand-title{font-size:clamp(1.65rem,7vw,2.25rem)}}
+</style>
+
+<style>
+.login-brand-title{display:flex;align-items:center;justify-content:center;gap:9px;white-space:nowrap;}
+.login-brand-title .verified-badge{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex:0 0 22px;margin:0;border-radius:50%;background:#3b82f6;box-shadow:0 0 0 2px rgba(59,130,246,.10),0 0 14px rgba(59,130,246,.24);transform:none;}
+.login-brand-title .verified-badge svg{display:block;width:14px;height:14px;}
+@media(max-width:767px){.login-brand-title{font-size:clamp(1.55rem,7vw,2.1rem);gap:8px}.login-brand-title .verified-badge{width:20px;height:20px;flex-basis:20px}.login-brand-title .verified-badge svg{width:13px;height:13px}}
+</style>
+</head>
+<body>
+
+<audio id="vortexMusic" preload="auto" loop>
+  <source src="./assets/Vortex Cloud Phone.mp3" type="audio/mpeg">
+</audio>
+<div id="audioGate" class="login-gate" aria-modal="true" role="dialog" aria-label="Vortex Cloud Phone login">
+  <div class="login-shell">
+    <div class="login-video">
+      <video id="loginVideo" autoplay muted loop playsinline preload="metadata">
+        <source src="./assets/vortex-login.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="login-content text-center">
+      <div class="login-logo mx-auto">
+        <img src="./logo.png" alt="Vortex Cloud Phone" class="w-full h-full object-contain">
+      </div>
+      <h1 class="login-title login-brand-title mt-5">
+        <span>Vortex Cloud Phone</span>
+        <span class="verified-badge" role="img" aria-label="Badge Vortex Cloud Phone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.8 12.3l3.35 3.3 7.05-7.05" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </h1>
+      <p class="login-description">Gunakan akun Google untuk masuk ke Vortex Cloud Phone. Setelah berhasil login, sesi akun akan tersimpan agar Anda tidak perlu masuk berulang kali di perangkat ini.</p>
+
+      <button id="googleLogin" class="google-btn mt-6" type="button">
+        <svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.35 12.23c0-.79-.07-1.55-.23-2.27H12v4.3h5.24a4.48 4.48 0 0 1-1.94 2.94v2.45h3.14c1.84-1.69 2.91-4.18 2.91-7.42z"/><path fill="#34A853" d="M12 21.75c2.63 0 4.84-.87 6.45-2.35l-3.14-2.45c-.87.58-1.98.92-3.31.92-2.54 0-4.7-1.72-5.47-4.03H3.28v2.53A9.75 9.75 0 0 0 12 21.75z"/><path fill="#FBBC05" d="M6.53 13.84A5.86 5.86 0 0 1 6.22 12c0-.64.11-1.27.31-1.84V7.63H3.28A9.75 9.75 0 0 0 2.25 12c0 1.57.38 3.05 1.03 4.37l3.25-2.53z"/><path fill="#EA4335" d="M12 6.13c1.43 0 2.72.49 3.73 1.45l2.8-2.8C16.84 3.14 14.63 2.25 12 2.25a9.75 9.75 0 0 0-8.72 5.38l3.25 2.53C7.3 7.85 9.46 6.13 12 6.13z"/></svg>
+        <span id="googleLoginText">Lanjutkan dengan Google</span>
+      </button>
+      <div id="loginStatus" class="login-status">Login aman dengan Google</div>
+      <div class="login-help">Dengan melanjutkan, Anda akan diarahkan ke Google untuk memilih akun yang ingin digunakan.</div>
+      <div class="login-footer-note"><i class="fa-solid fa-volume-high"></i><span>Musik website akan aktif setelah Anda berinteraksi dengan halaman.</span></div>
+    </div>
+  </div>
+</div>
+<button id="musicControl" class="music-control hidden" aria-label="Matikan musik" title="Music">
+  <i class="fa-solid fa-volume-high"></i>
+</button>
+<header class="fixed top-0 inset-x-0 z-50 px-3 sm:px-5 pt-3 pointer-events-none"><nav class="nav max-w-7xl mx-auto rounded-2xl px-3 sm:px-4 py-3 pointer-events-auto"><div class="flex items-center gap-3 min-w-0"><a href="#home" class="flex items-center gap-3 min-w-0 flex-1"><span class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden bg-black/60 border border-white/10 grid place-items-center shrink-0"><img src="./logo.png" alt="Vortex Cloud Phone" class="w-full h-full object-contain p-1.5"></span><span class="min-w-0"><strong class="block text-sm sm:text-base truncate">Vortex Cloud Phone<span class="verified-badge" role="img" aria-label="Verified Vortex Cloud Phone"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#3B82F6" d="M12 2.25l2.03 1.38 2.44-.18 1.02 2.23 2.23 1.02-.18 2.44L20.92 11l-.38 2.38.18 2.44-2.23 1.02-1.02 2.23-2.44-.18L12 20.25l-2.03-1.36-2.44.18-1.02-2.23-2.23-1.02.18-2.44L3.08 11l1.38-2.03-.18-2.44 2.23-1.02 1.02-2.23 2.44.18L12 2.25z"/><path d="M7.7 12.15l2.65 2.65 5.95-6" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span></strong><small class="block text-[9px] sm:text-[10px] text-white/40 tracking-[.16em] uppercase truncate">Cloud Android Platform</small></span></a><div class="hidden xl:flex items-center gap-1 text-sm text-white/60"><a class="px-3 py-2 rounded-lg hover:bg-white/5 hover:text-white" href="#home"><i class="fa-solid fa-house mr-2"></i>Beranda</a><a class="px-3 py-2 rounded-lg hover:bg-white/5 hover:text-white" href="#features"><i class="fa-solid fa-layer-group mr-2"></i>Fitur</a><a class="px-3 py-2 rounded-lg hover:bg-white/5 hover:text-white" href="#console"><i class="fa-solid fa-terminal mr-2"></i>Developer Console</a><a class="px-3 py-2 rounded-lg hover:bg-white/5 hover:text-white" href="#specs"><i class="fa-solid fa-server mr-2"></i>Spesifikasi</a><a class="px-3 py-2 rounded-lg hover:bg-white/5 hover:text-white" href="#community"><i class="fa-solid fa-users mr-2"></i>Komunitas</a></div><div class="hidden lg:flex items-center gap-2"><button class="btn btn-primary text-xs" onclick="downloadAPK()"><i class="fa-brands fa-android"></i>Download APK</button><a class="btn btn-ghost text-xs" href="#console"><i class="fa-solid fa-terminal"></i>Console Log</a></div><button id="menuBtn" class="lg:hidden w-10 h-10 rounded-xl bg-white/5 border border-white/10 shrink-0" aria-label="Buka menu"><i class="fa-solid fa-bars"></i></button></div><div id="mobileMenu" class="hidden mt-3 pt-3 border-t border-white/10 overflow-hidden"><div class="grid gap-1 text-sm"><a class="px-3 py-3 rounded-xl hover:bg-white/5" href="#home"><i class="fa-solid fa-house w-5"></i>Beranda</a><a class="px-3 py-3 rounded-xl hover:bg-white/5" href="#features"><i class="fa-solid fa-layer-group w-5"></i>Fitur</a><a class="px-3 py-3 rounded-xl hover:bg-white/5" href="#console"><i class="fa-solid fa-terminal w-5"></i>Developer Console</a><a class="px-3 py-3 rounded-xl hover:bg-white/5" href="#specs"><i class="fa-solid fa-server w-5"></i>Spesifikasi Server</a><a class="px-3 py-3 rounded-xl hover:bg-white/5" href="#community"><i class="fa-solid fa-users w-5"></i>Komunitas</a><a class="px-3 py-3 rounded-xl hover:bg-white/5" href="docs/index.html"><i class="fa-solid fa-book-open w-5"></i>Documentation</a><button class="btn btn-primary mt-2" onclick="downloadAPK()"><i class="fa-brands fa-android"></i>Download APK v1.0</button></div></div></nav></header>
+<main id="home" class="relative pt-32 sm:pt-36">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20"><div class="grid lg:grid-cols-[1.15fr_.85fr] gap-10 lg:gap-16 items-center"><div><div class="inline-flex items-center gap-2 glass rounded-full px-3 py-2 text-xs text-white/65"><span class="status-dot"></span><i class="fa-solid fa-signal text-white/40"></i>System Online · Singapore / Jakarta</div><h1 class="hero-title font-extrabold mt-6">Vortex Cloud Phone<span class="block text-white/40 mt-3">Cloud Android Anti-Lag &amp; Full Root Access</span></h1><p class="text-white/55 text-base sm:text-lg leading-8 max-w-2xl mt-6">Streaming Android virtual berkinerja tinggi langsung dari cloud. Hemat baterai, latency rendah, dan environment yang dapat dikustomisasi untuk gaming, testing, development, serta automation.</p><div class="flex flex-col sm:flex-row gap-3 mt-8 max-w-xl"><button class="btn btn-primary" onclick="downloadAPK()"><i class="fa-solid fa-download"></i>Download Client APK</button><button class="btn btn-ghost" onclick="startDemo()"><i class="fa-solid fa-play"></i>Coba Demo WebRTC</button></div><div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-9"><div class="glass card p-4"><i class="fa-solid fa-gauge-high text-white/45"></i><div class="text-xl font-bold mt-3"><span id="pingSG">12</span>ms</div><small class="text-white/35">Singapore</small></div><div class="glass card p-4"><i class="fa-solid fa-location-dot text-white/45"></i><div class="text-xl font-bold mt-3"><span id="pingID">8</span>ms</div><small class="text-white/35">Jakarta</small></div><div class="glass card p-4"><i class="fa-solid fa-film text-white/45"></i><div class="text-xl font-bold mt-3">120</div><small class="text-white/35">FPS target</small></div><div class="glass card p-4"><i class="fa-solid fa-circle-check text-green-300/70"></i><div class="text-xl font-bold mt-3 text-green-300">Online</div><small class="text-white/35">System</small></div></div></div><div class="glass card p-4 sm:p-5"><div class="flex justify-between items-center mb-4"><div><div class="text-[10px] tracking-[.2em] uppercase text-white/35">Cloud Instance</div><div class="font-bold mt-1">Vortex Android VM #01</div></div><span class="text-xs text-green-300 bg-green-400/10 border border-green-400/15 px-2.5 py-1 rounded-full"><i class="fa-solid fa-circle text-[7px] mr-1"></i>LIVE</span></div><div class="aspect-[16/10] rounded-2xl bg-[#030509] border border-white/10 relative overflow-hidden grid place-items-center px-4 sm:px-6"><div class="text-center w-full"><div class="w-20 h-20 rounded-2xl bg-white/5 border border-white/10 grid place-items-center mx-auto"><img src="./logo.png" alt="" class="w-14 h-14 object-contain"></div><div class="font-semibold mt-4 text-base sm:text-lg">Virtual Android Display</div><div class="mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-[10px] sm:text-xs text-white/35 leading-5"><span class="inline-flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-wifi"></i>WebRTC</span><span class="text-white/15 hidden sm:inline">•</span><span class="inline-flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-video"></i>H.264 / AV1</span><span class="text-white/15 hidden sm:inline">•</span><span class="inline-flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-display"></i>1080p</span><span class="text-white/15 hidden sm:inline">•</span><span class="inline-flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-gauge-high"></i>120 FPS</span></div></div></div><div class="grid grid-cols-3 gap-2 mt-4"><div class="bg-white/5 border border-white/10 rounded-xl p-3"><small class="text-white/35"><i class="fa-solid fa-microchip mr-1"></i>CPU</small><div class="font-semibold mt-1">8 Core</div></div><div class="bg-white/5 border border-white/10 rounded-xl p-3"><small class="text-white/35"><i class="fa-solid fa-memory mr-1"></i>RAM</small><div class="font-semibold mt-1">16 GB</div></div><div class="bg-white/5 border border-white/10 rounded-xl p-3"><small class="text-white/35"><i class="fa-solid fa-shield-halved mr-1"></i>Root</small><div class="font-semibold mt-1">Enabled</div></div></div></div></div></section>
+<section id="features" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-white/5"><div class="max-w-2xl mb-10"><div class="text-xs tracking-[.22em] uppercase text-white/35"><i class="fa-solid fa-sparkles mr-2"></i>Core Platform</div><h2 class="section-title font-extrabold mt-3">Cloud power tanpa membebani perangkat</h2><p class="text-white/50 leading-7 mt-4">Empat fondasi utama untuk instance Android virtual yang rapi, fleksibel, dan mudah dikontrol.</p></div><div class="grid md:grid-cols-2 gap-4"><article class="glass card p-6 transition"><div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div><h3 class="text-xl font-bold mt-5"><i class="fa-solid fa-check text-green-300/70 mr-2"></i>Full Root Access</h3><p class="text-white/50 leading-7 mt-2">Environment root berbasis Magisk/LSPosed untuk kustomisasi dan pengujian modul. Penggunaan harus mengikuti aturan layanan platform yang digunakan.</p></article><article class="glass card p-6 transition"><div class="icon-box"><i class="fa-solid fa-bolt"></i></div><h3 class="text-xl font-bold mt-5"><i class="fa-solid fa-wand-magic-sparkles text-white/50 mr-2"></i>Ultra Low Latency</h3><p class="text-white/50 leading-7 mt-2">Streaming WebRTC dengan H.264/AV1 dan target hingga 120 FPS, bergantung region, jaringan, perangkat, dan konfigurasi server.</p></article><article class="glass card p-6 transition"><div class="icon-box"><i class="fa-solid fa-temperature-arrow-down"></i></div><h3 class="text-xl font-bold mt-5"><i class="fa-solid fa-battery-three-quarters text-white/50 mr-2"></i>Zero Device Strain</h3><p class="text-white/50 leading-7 mt-2">Komputasi utama berlangsung di cloud sehingga beban perangkat fisik dapat ditekan dan penggunaan baterai lebih efisien.</p></article><article class="glass card p-6 transition"><div class="icon-box"><i class="fa-solid fa-layer-group"></i></div><h3 class="text-xl font-bold mt-5"><i class="fa-solid fa-gears text-white/50 mr-2"></i>Multi-Instance Automation</h3><p class="text-white/50 leading-7 mt-2">Kelola beberapa virtual phone untuk QA, monitoring, task automation, dan workflow terjadwal secara terpisah.</p></article></div></section>
+<section id="console" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-white/5"><div class="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-5 mb-8"><div><div class="text-xs tracking-[.22em] uppercase text-white/35"><i class="fa-solid fa-terminal mr-2"></i>Developer Tools</div><h2 class="section-title font-extrabold mt-3">Interactive Developer Console</h2><p class="text-white/50 leading-7 mt-3 max-w-2xl">Console frontend untuk demo flow ADB, shell, webhook, dan API. Tidak mengeksekusi command root sungguhan dari browser.</p></div><div id="adbBadge" class="glass rounded-xl px-4 py-3 text-sm text-white/55"><i class="fa-solid fa-circle text-white/20 mr-2"></i>ADB Disconnected</div></div><div class="grid lg:grid-cols-[1.35fr_.65fr] gap-4"><div class="rounded-2xl overflow-hidden border border-white/10 bg-[#05070a] shadow-2xl"><div class="px-4 py-3 border-b border-white/10 flex items-center justify-between"><div class="flex gap-1.5"><i class="fa-solid fa-circle text-red-400/70 text-[10px]"></i><i class="fa-solid fa-circle text-yellow-400/70 text-[10px]"></i><i class="fa-solid fa-circle text-green-400/70 text-[10px]"></i><span class="ml-2 text-[10px] text-white/30 terminal">vortex-console</span></div><span class="text-[9px] text-white/25">DEMO MODE</span></div><div id="terminal" class="terminal h-80 sm:h-96 overflow-y-auto p-4 text-xs sm:text-sm leading-6 text-white/65"><div><span class="text-green-300">vortex@cloud</span>:<span class="text-blue-300">~</span>$ connect --instance vm-01</div><div class="text-white/35">Connection is simulated locally in this demo.</div><div class="text-green-300">[OK] Ready.</div></div><div class="border-t border-white/10 p-3 flex flex-col sm:flex-row gap-2"><input id="commandInput" value="getprop ro.build.version.release" class="terminal flex-1 min-w-0 rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-white/25 text-xs" aria-label="Command"><button class="btn btn-primary sm:w-auto" onclick="runCommand()"><i class="fa-solid fa-play"></i>Run</button></div></div><div class="glass card p-5"><div class="font-bold"><i class="fa-solid fa-bolt mr-2"></i>Quick Actions</div><div class="grid gap-2 mt-4"><button class="text-left p-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10" onclick="connectADB()"><i class="fa-solid fa-link w-5"></i>Connect ADB</button><button class="text-left p-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10" onclick="runShell()"><i class="fa-solid fa-terminal w-5"></i>Run Shell Script</button><button class="text-left p-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10" onclick="sendWebhook()"><i class="fa-solid fa-globe w-5"></i>Test Webhook</button><button class="text-left p-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10" onclick="clearTerminal()"><i class="fa-solid fa-eraser w-5"></i>Clear Console</button></div><div class="mt-6 pt-5 border-t border-white/10"><div class="text-xs text-white/35 uppercase tracking-wider"><i class="fa-solid fa-book mr-2"></i>API Docs</div><div class="space-y-3 mt-4 text-xs"><div><code class="text-white/80">POST /webhooks/events</code><p class="text-white/40 mt-1">Instance lifecycle events.</p></div><div><code class="text-white/80">POST /remote/touch</code><p class="text-white/40 mt-1">Remote touch injection.</p></div><div><code class="text-white/80">GET /adb/connect</code><p class="text-white/40 mt-1">ADB-over-WebRTC handshake.</p></div></div></div></div></div></section>
+<section id="specs" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-white/5"><div class="max-w-2xl mb-10"><div class="text-xs tracking-[.22em] uppercase text-white/35"><i class="fa-solid fa-server mr-2"></i>Infrastructure</div><h2 class="section-title font-extrabold mt-3">Live Server Metrics</h2><p class="text-white/50 mt-4 leading-7">Contoh spesifikasi instance virtual. Kapasitas produksi dapat berbeda berdasarkan paket dan region.</p></div><div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"><div class="glass card p-6"><div class="icon-box"><i class="fa-solid fa-microchip"></i></div><div class="text-3xl font-extrabold mt-5">8 Core</div><div class="text-white/40 text-sm mt-1">Dedicated CPU</div></div><div class="glass card p-6"><div class="icon-box"><i class="fa-solid fa-memory"></i></div><div class="text-3xl font-extrabold mt-5">16 GB</div><div class="text-white/40 text-sm mt-1">Virtual RAM</div></div><div class="glass card p-6"><div class="icon-box"><i class="fa-solid fa-gauge-high"></i></div><div class="text-3xl font-extrabold mt-5">GPU</div><div class="text-white/40 text-sm mt-1">NVIDIA / AMD Cloud</div></div><div class="glass card p-6"><div class="icon-box"><i class="fa-brands fa-android"></i></div><div class="text-3xl font-extrabold mt-5">Android 12</div><div class="text-white/40 text-sm mt-1">Rooted Instance</div></div></div></section>
+<section id="community" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-white/5"><div class="glass card p-6 sm:p-10"><div class="max-w-2xl"><div class="text-xs tracking-[.22em] uppercase text-white/35"><i class="fa-solid fa-users mr-2"></i>Community</div><h2 class="section-title font-extrabold mt-3">Join the Vortex ecosystem</h2><p class="text-white/50 leading-7 mt-4">Ikuti kanal resmi Vortex Cloud Phone untuk update, tutorial, showcase, dan support komunitas.</p></div><div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-8"><a href="https://discord.gg/AUYXKgkPe" target="_blank" rel="noopener noreferrer" class="glass rounded-2xl p-5"><i class="fa-brands fa-discord text-2xl"></i><div class="font-bold mt-4">Discord</div><div class="text-xs text-white/40 mt-1">Komunitas &amp; Support 24/7</div></a><a href="https://www.youtube.com/@vortexphone.v" target="_blank" rel="noopener noreferrer" class="glass rounded-2xl p-5"><i class="fa-brands fa-youtube text-2xl"></i><div class="font-bold mt-4">YouTube</div><div class="text-xs text-white/40 mt-1">Tutorial &amp; Showcase</div></a><a href="https://www.tiktok.com/@vortex.cloud.phon?_r=1&_t=ZS-9A98yKqv6X6" target="_blank" rel="noopener noreferrer" class="glass rounded-2xl p-5"><i class="fa-brands fa-tiktok text-2xl"></i><div class="font-bold mt-4">TikTok</div><div class="text-xs text-white/40 mt-1">Highlights &amp; Demo</div></a><a href="docs/index.html" class="glass rounded-2xl p-5"><i class="fa-solid fa-book-open text-2xl"></i><div class="font-bold mt-4">Documentation</div><div class="text-xs text-white/40 mt-1">Website &amp; API Docs</div></a></div></div></section>
+</main>
+<footer class="border-t border-white/5 safe-bottom"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4"><div class="text-xs text-white/35"><i class="fa-regular fa-copyright mr-1"></i>2026 Vortex Cloud Phone</div><div class="flex flex-wrap justify-center gap-4 text-xs text-white/45"><a href="#" onclick="placeholder(event,'Kebijakan Privasi')">Kebijakan Privasi</a><a href="#" onclick="placeholder(event,'Syarat Layanan')">Syarat Layanan</a><a href="#" onclick="placeholder(event,'GitHub Releases')">GitHub Repository Releases</a></div></div></footer>
+<div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-[100] hidden max-w-[calc(100vw-2rem)]"><div id="toastText" class="glass rounded-xl px-4 py-3 text-sm"></div></div>
+<script>
+const terminal=document.getElementById('terminal'),input=document.getElementById('commandInput');
+function toast(t){const e=document.getElementById('toast');document.getElementById('toastText').textContent=t;e.classList.remove('hidden');clearTimeout(window.tt);window.tt=setTimeout(()=>e.classList.add('hidden'),2600)}
+function line(t,c='text-white/65'){const d=document.createElement('div');d.className='fade-in '+c;d.textContent=t;terminal.appendChild(d);terminal.scrollTop=terminal.scrollHeight}
+function runCommand(){const c=input.value.trim();if(!c)return;line('vortex@cloud:~$ '+c,'text-white/85');setTimeout(()=>{let o='{"status":"ok","instance":"vm-01","android":"12","root":true}';if(c.includes('getprop'))o='12';else if(c.includes('whoami'))o='root';else if(c.includes('uname'))o='Linux vortex-cloud 5.10.0-vortex aarch64';else if(c.includes('ping'))o='64 bytes from cloud-gateway: time=8 ms';line(o,'text-green-300')},300)}
+function connectADB(){document.getElementById('adbBadge').innerHTML='<i class="fa-solid fa-circle text-green-400 mr-2"></i>ADB Connected · vm-01';line('[ADB] transport connected to vm-01','text-green-300');toast('ADB demo connection aktif.')}
+function runShell(){['$ /system/bin/sh','# id','uid=0(root) gid=0(root) groups=0(root)','# getprop ro.build.version.release','12','# echo "Vortex shell ready"','Vortex shell ready'].forEach((x,i)=>setTimeout(()=>line(x,i%2?'text-white/75':'text-green-300'),i*150));toast('Demo shell dijalankan.')}
+function sendWebhook(){line('[WEBHOOK] POST /webhooks/events','text-blue-300');setTimeout(()=>line('{"event":"instance.ready","id":"vm-01","ok":true}','text-green-300'),250);toast('Webhook simulation berhasil.')}
+function clearTerminal(){terminal.innerHTML='';line('vortex@cloud:~$ console cleared','text-white/40')}
+function startDemo(){toast('Demo WebRTC masih placeholder. Hubungkan endpoint WebRTC produksi Anda.');document.getElementById('console').scrollIntoView({behavior:'smooth',block:'start'})}
+function downloadAPK(){toast('Hubungkan tombol ini ke APK produksi Anda. Contoh: /downloads/vortex-cloud-phone-v1.0.apk')}
+function placeholder(e,n){e.preventDefault();toast(n+' masih placeholder. Ganti href="#" dengan URL resmi.')}
+const menu=document.getElementById('mobileMenu'),mb=document.getElementById('menuBtn');mb.addEventListener('click',()=>{menu.classList.toggle('hidden');mb.innerHTML=menu.classList.contains('hidden')?'<i class="fa-solid fa-bars"></i>':'<i class="fa-solid fa-xmark"></i>'});document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>{menu.classList.add('hidden');mb.innerHTML='<i class="fa-solid fa-bars"></i>'}));input.addEventListener('keydown',e=>{if(e.key==='Enter')runCommand()});setInterval(()=>{document.getElementById('pingSG').textContent=10+Math.floor(Math.random()*7);document.getElementById('pingID').textContent=6+Math.floor(Math.random()*6)},2500);
+
+const vortexMusic=document.getElementById('vortexMusic');
+const audioGate=document.getElementById('audioGate');
+const googleLogin=document.getElementById('googleLogin');
+const googleLoginText=document.getElementById('googleLoginText');
+const loginStatus=document.getElementById('loginStatus');
+const musicControl=document.getElementById('musicControl');
+vortexMusic.volume=0.4;
+
+function updateMusicButton(){
+  musicControl.classList.remove('hidden');
+  musicControl.innerHTML=vortexMusic.paused?'<i class="fa-solid fa-volume-xmark"></i>':'<i class="fa-solid fa-volume-high"></i>';
+  musicControl.setAttribute('aria-label',vortexMusic.paused?'Nyalakan musik':'Matikan musik');
+}
+async function startVortexMusic(){
+  try{await vortexMusic.play();}catch(e){console.warn('Audio playback failed',e);}
+  updateMusicButton();
+}
+musicControl.addEventListener('click',async()=>{
+  if(vortexMusic.paused){try{await vortexMusic.play();}catch(e){}}
+  else{vortexMusic.pause();}
+  updateMusicButton();
+});
+vortexMusic.addEventListener('play',updateMusicButton);
+vortexMusic.addEventListener('pause',updateMusicButton);
+
+function setLoginStatus(message,error=false){
+  loginStatus.textContent=message;
+  loginStatus.style.color=error?'rgba(248,113,113,.82)':'rgba(255,255,255,.38)';
+}
+function unlockVortex(user){
+  audioGate.classList.add('hidden-gate');
+  updateMusicButton();
+  if(user){
+    const name=user.displayName||'Vortex User';
+    toast('Selamat datang, '+name+'!');
+  }
+}
+window.vortexUnlock=unlockVortex;
+googleLogin.addEventListener('click',()=>startVortexMusic());
+</script>
+
+<script type="module">
+  // Isi konfigurasi Firebase Web App Anda di bagian ini.
+  // Jangan gunakan kredensial palsu. Google Sign-In hanya aktif setelah
+  // Firebase Authentication + Google Provider dikonfigurasi di Firebase Console.
+  const VORTEX_FIREBASE_CONFIG = window.VORTEX_FIREBASE_CONFIG || {
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
+  };
+
+  const googleButton = document.getElementById('googleLogin');
+  const googleText = document.getElementById('googleLoginText');
+  const status = document.getElementById('loginStatus');
+
+  function configured(cfg){
+    return cfg && cfg.apiKey && cfg.authDomain && cfg.projectId && cfg.appId;
+  }
+
+  if(!configured(VORTEX_FIREBASE_CONFIG)){
+    googleButton.addEventListener('click',()=>{
+      status.textContent='Firebase belum dikonfigurasi. Isi VORTEX_FIREBASE_CONFIG di index.html.';
+      status.style.color='rgba(251,191,36,.9)';
+      googleText.textContent='Google Login belum dikonfigurasi';
+    },{once:false});
+  } else {
+    try{
+      const [{initializeApp},{getAuth,setPersistence,browserLocalPersistence,onAuthStateChanged,GoogleAuthProvider,signInWithPopup,signOut}]
+        = await Promise.all([
+          import('https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js'),
+          import('https://www.gstatic.com/firebasejs/12.3.0/firebase-auth.js')
+        ]);
+
+      const app=initializeApp(VORTEX_FIREBASE_CONFIG);
+      const auth=getAuth(app);
+      await setPersistence(auth,browserLocalPersistence);
+      const provider=new GoogleAuthProvider();
+      provider.setCustomParameters({prompt:'select_account'});
+
+      onAuthStateChanged(auth,(user)=>{
+        if(user){
+          googleText.textContent=user.displayName ? `Lanjutkan sebagai ${user.displayName}` : 'Google berhasil terhubung';
+          status.textContent='Signed in · '+(user.email||'Google Account');
+          status.style.color='rgba(134,239,172,.85)';
+          window.vortexUnlock(user);
+        }else{
+          googleText.textContent='Lanjutkan dengan Google';
+          status.textContent='Login aman dengan Google';
+          status.style.color='rgba(255,255,255,.38)';
+        }
+      });
+
+      googleButton.addEventListener('click',async()=>{
+        googleButton.disabled=true;
+        googleButton.style.opacity='.7';
+        googleText.textContent='Menghubungkan ke Google…';
+        status.textContent='Membuka Google Sign-In…';
+        try{
+          await signInWithPopup(auth,provider);
+        }catch(err){
+          console.error(err);
+          const message=err?.code==='auth/popup-closed-by-user'
+            ? 'Login dibatalkan.'
+            : 'Login Google gagal. Periksa Firebase Console dan Authorized Domains.';
+          status.textContent=message;
+          status.style.color='rgba(248,113,113,.82)';
+          googleText.textContent='Coba lagi dengan Google';
+        }finally{
+          googleButton.disabled=false;
+          googleButton.style.opacity='1';
+        }
+      });
+
+      window.vortexSignOut=()=>signOut(auth);
+    }catch(err){
+      console.error(err);
+      status.textContent='Firebase SDK gagal dimuat. Periksa koneksi internet.';
+      status.style.color='rgba(248,113,113,.82)';
+    }
+  }
+</script>
+</body></html>
